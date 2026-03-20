@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Academia testeFit</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/modal.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+
+<body>
+
+    <header id="header">
+
+        <div class="logo">TESTE<span>FIT</span></div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#planos">Planos</a>
+            <a href="#promo">Promoção</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>TRANSFORME SEU <span>CORPO</span></h1>
+            <p>Treinos intensos, equipamentos modernos e ambiente motivador.</p>
+            <a href="#planos" class="btn">VER PLANOS</a>
+        </div>
+    </section>
+
+    <section class="beneficios">
+
+        <h2>POR QUE TREINAR NA TESTEFIT?</h2>
+
+            <div class="beneficios-container">
+
+                <div class="beneficio reveal">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Equipamentos Modernos</h3>
+                    <p>Aparelhos de última geração para máximo desempenho.</p>
+                </div>
+
+                <div class="beneficio reveal">
+                    <i class="fas fa-fire"></i>
+                    <h3>Alta Performance</h3>
+                    <p>Treinos intensos para resultados rápidos e reais.</p>
+                </div>
+
+                <div class="beneficio reveal">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>Ambiente Motivador</h3>
+                    <p>Treine com pessoas focadas e energia positiva.</p>
+                </div>
+
+                <div class="beneficio reveal">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horário Flexível</h3>
+                    <p>Treine no horário que melhor se encaixa na sua rotina.</p>
+                </div>
+
+            </div>
+    </section>
+
+    <section class="servicos">
+
+        <h2>ESTRUTURA COMPLETA</h2>
+
+        <div class="servicos-container">
+
+            <div class="servico reveal">
+                <i class="fas fa-user"></i>
+                <h3>Instrutores Qualificados</h3>
+                <p>Acompanhamento profissional para evolução segura.</p>
+            </div>
+
+            <div class="servico reveal">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Avaliação Física</h3>
+                <p>Monitore seu progresso e alcance melhores resultados.</p>
+            </div>
+
+            <div class="servico reveal">
+                <i class="fas fa-tshirt"></i>
+                <h3>Loja Fitness</h3>
+                <p>Roupas e acessórios para treinar com estilo.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="planos" id="planos">
+        <h2>NOSSOS PLANOS</h2>
+
+        <div class="cards">
+
+            <div class="card reveal">
+                <h3>MENSAL</h3>
+                <p class="preco">R$ 90</p>
+
+                <ul>
+                    <li>Musculação completa</li>
+                    <li>Acesso livre</li>
+                    <li>Ambiente climatizado</li>
+                </ul>
+
+                <button onclick="abrirPlano('Mensal', 90)">Começar</button>
+
+            </div>
+
+            <div class="card destaque reveal">
+                <h3>SEMESTRAL</h3>
+                <p class="preco">R$ 70</p>
+
+                <ul>
+                    <li>Plano mais escolhido</li>
+                    <li>Economia garantida</li>
+                    <li>Acesso total</li>
+                </ul>
+
+                <button onclick="abrirPlano('Semestral', 70)">Começar</button>
+
+            </div>
+
+            <div class="card reveal">
+                <h3>ANUAL</h3>
+                <p class="preco">R$ 65</p>
+
+                <ul>
+                    <li>Máxima economia</li>
+                    <li>Suporte completo</li>
+                    <li>Acesso premium</li>
+                </ul>
+
+                <button onclick="abrirPlano('Anual', 65)">Começar</button>
+            </div>
+
+        </div>
+                <p class="aviso-matricula">
+                    ⚠️ Para novos alunos ou alunos retornando após um período, será cobrada taxa de matrícula de R$ 30,00.
+                </p>
+
+    </section>
+
+
+    <section class="promo" id="promo">
+
+        <div class="promo-content">
+            <h2>🔥 TREINE EM DOBRO</h2>
+
+            <p class="destaque">
+                Pague <strong>6 meses</strong> e treine <strong>12 meses</strong>
+            </p>
+
+            <h3>6x de R$ 129,90</h3>
+
+            <p class="urgencia">⚠️ Promoção por tempo limitado</p>
+
+            <button onclick="abrirPlano('Promo Anual', 129.90)" class="btn-dark">
+                QUERO ESSA PROMO
+            </button>
+
+        </div>
+    </section>
+
+
+    <section class="contato" id="contato">
+
+        <h2>FALE CONOSCO</h2>
+
+        <p>Entre em contato ou venha nos visitar.</p>
+
+        <div class="social">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+
+        <p class="endereco">
+            Rua teste teste, 335<br>
+            Telefone: (11) 9006-000
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Academia testeFit</p>
+    </footer>
+
+
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <h2>Matrícula</h2>
+            <p id="planoSelecionado"></p>
+
+            <input type="text" id="nome" placeholder="Nome completo">
+            <input type="tel" id="telefone" placeholder="Telefone">
+            <input type="email" id="email" placeholder="Email">
+
+            <p class="aviso-matricula">
+                ⚠️ Taxa de matrícula de R$ 30,00 para novos alunos ou retornos.
+            </p>
+
+            <button onclick="cadastrarAluno()" class="btn">
+                GERAR PIX
+            </button>
+
+            <!-- pix dentro do modl -->
+            <div id="pixArea" style="display:none; margin-top:20px;">
+
+                <p><strong>Valor:</strong> R$ <span id="valorPix"></span></p>
+                <p><strong>Chave PIX:</strong></p>
+                <input type="text" id="chavePix" value="academiapowerfit@email.com" readonly>
+
+                <button onclick="copiarPix()">Copiar chave PIX</button>
+
+                <p style="margin-top:15px;">
+                    Após o pagamento, apresente o comprovante.
+                </p>
+
+                <div id="qrcode" style="margin-top:20px;"></div>
+
+                <a id="btnWhatsapp" target="_blank" class="btn-whatsapp">
+                    📲 ENVIAR COMPROVANTE
+                </a>
+            </div>
+        </div>
+    </div>
+
+<script src="js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</body>
+
+</html>

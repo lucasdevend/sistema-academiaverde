@@ -1,0 +1,532 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* header */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:transparent;
+    transition:0.3s;
+    z-index:1000;
+}
+
+header.scrolled{
+    background:black;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#00ff5e;
+}
+
+nav a{
+    margin-left:30px;
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00ff5e;
+}
+
+/* hero */
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    padding-left:80px;
+    background:linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b");
+    background-size:cover;
+}
+
+.hero h1{
+    font-size:70px;
+}
+
+.hero span{
+    color:#00ff5e;
+}
+
+.hero p{
+    margin-top: -10px;
+    margin-bottom: 80px;
+}
+
+.btn{
+    padding:15px 40px;
+    background:#00ff5e;
+    color:black;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* planos */
+
+.planos{
+    padding:120px 80px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:50px;
+}
+
+.card{
+    background:#1a1a1a;
+    padding:40px;
+    width:260px;
+    border-radius:10px;
+    transition:0.4s;
+    opacity:0;
+    transform:translateY(40px);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #00ff5e;
+}
+
+.destaque{
+    border:2px solid #00ff5e;
+}
+
+.preco{
+    font-size:40px;
+    margin:20px 0;
+    color:#00ff5e;
+}
+
+.card ul{
+    list-style:none;
+    margin-bottom:20px;
+}
+
+.card li{
+    margin:10px 0;
+}
+
+.card button{
+    padding:12px 25px;
+    background:#00ff5e;
+    border:none;
+    cursor:pointer;
+}
+
+/* promo */
+
+.promo{
+    padding:100px 20px;
+    text-align:center;
+    background: linear-gradient(135deg, #000000, #021d12);
+}
+
+.promo-content{
+    max-width:600px;
+    margin:auto;
+}
+
+.promo h2{
+    font-size:40px;
+    color:#00ff5e;
+    margin-bottom:20px;
+    text-shadow: 0 0 20px #00ff5e55;
+}
+
+.promo .destaque{
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.promo h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.promo .urgencia{
+    color:orange;
+    margin-bottom:25px;
+    font-weight:bold;
+}
+
+.btn-dark{
+    background:#00ff5e;
+    color:black;
+    padding:15px 30px;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.btn-dark:hover{
+    transform:scale(1.1);
+    box-shadow: 0 0 20px #00ff5e;
+}
+/* contato */
+
+.contato{
+    text-align:center;
+    padding:100px;
+}
+
+.social{
+    margin:30px 0;
+}
+
+.social a{
+    font-size:28px;
+    margin:15px;
+    color:white;
+    transition:0.3s;
+}
+
+.social a:hover{
+    color:#00ff5e;
+}
+
+/* footer */
+
+footer{
+background:black;
+padding:40px;
+text-align:center;
+}
+
+/* whats float */
+
+
+/* beneficios market */
+
+/* beneficios */
+
+.beneficios{
+    padding:100px 80px;
+    text-align:center;
+    background:#111;
+}
+
+.beneficios h2{
+    font-size:40px;
+    margin-bottom:60px;
+}
+
+.beneficios-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.beneficio{
+    background:#1a1a1a;
+    padding:40px;
+    width:220px;
+    border-radius:10px;
+    transition:0.4s;
+    opacity:0;
+    transform:translateY(40px);
+}
+
+.beneficio i{
+    font-size:40px;
+    color:#00ff5e;
+    margin-bottom:15px;
+}
+
+.beneficio h3{
+    margin-bottom:10px;
+}
+
+.beneficio:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #00ff5e;
+}
+
+/* whats no pix */
+.btn-whatsapp{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:10px 16px;
+    margin-top:15px;
+
+    background:#0f2e1f;
+    color:#00ff5e;
+
+    border:1px solid #00ff5e33;
+    border-radius:6px;
+
+    font-size:14px;
+    font-weight:500;
+    text-decoration:none;
+
+    transition:0.2s;
+}
+
+/* hover leve */
+.btn-whatsapp:hover{
+    background:#123f2a;
+    border-color:#00ff5e66;
+}
+/* fim */
+
+.servicos{
+    padding:100px 20px;
+    text-align:center;
+    background:#0a0a0a;
+}
+
+.servicos h2{
+    font-size:36px;
+    margin-bottom:50px;
+}
+
+.servicos-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.servico{
+    background:#111;
+    padding:30px;
+    border-radius:10px;
+    width:250px;
+    transition:0.3s;
+}
+
+.servico i{
+    font-size:40px;
+    color:#00ff5e;
+    margin-bottom:15px;
+}
+
+.servico:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #00ff5e;
+}
+
+
+.btn-dark{
+    display:inline-block;
+    padding:10px 20px;
+    background:#00ff5e;
+    color:#00210f;
+    border:none;
+    border-radius:6px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+/* hover suave */
+.btn-dark:hover{
+background:#00cc4a;
+}
+
+/* responsividade */
+
+/* ============================
+📱 mobile (até 768px)
+============================ */
+@media (max-width: 768px){
+
+  /* header */
+  header{
+    padding:15px 20px;
+  }
+
+  nav{
+    display:flex;
+    gap:10px;
+  }
+
+  nav a{
+    margin-left:0;
+    font-size:13px;
+  }
+
+  .logo{
+    font-size:22px;
+  }
+
+  /* hero */
+  .hero{
+    padding:20px;
+    text-align:center;
+    justify-content:center;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+
+  .hero p{
+    margin-bottom:40px;
+    font-size:14px;
+  }
+
+  /* beneficios */
+  .beneficios{
+    padding:60px 20px;
+  }
+
+  .beneficios h2{
+    font-size:26px;
+  }
+
+  .beneficios-container{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+  }
+
+  .beneficio{
+    width:100%;
+    max-width:300px;
+  }
+
+  /* servicos */
+  .servicos{
+    padding:60px 20px;
+  }
+
+  .servicos h2{
+    font-size:26px;
+  }
+
+  .servicos-container{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .servico{
+    width:100%;
+    max-width:300px;
+  }
+
+  /* planos */
+  .planos{
+    padding:60px 20px;
+  }
+
+  .planos h2{
+    font-size:26px;
+  }
+
+  .cards{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .card{
+    width:100%;
+    max-width:300px;
+  }
+
+  /* promo */
+  .promo{
+    padding:60px 20px;
+  }
+
+  .promo h2{
+    font-size:28px;
+  }
+
+  .promo h3{
+    font-size:22px;
+  }
+
+  /* contato */
+  .contato{
+    padding:60px 20px;
+  }
+
+  .contato h2{
+    font-size:26px;
+  }
+
+  .social a{
+    font-size:22px;
+  }
+
+  /* modal */
+  .modal-content{
+    width:95%;
+    max-width:350px;
+    padding:20px;
+  }
+
+  .modal-content input,
+  .modal-content button{
+    width:100%;
+  }
+
+}
+
+
+/* ============================
+📱 telas muito pequenas (até 480px)
+============================ */
+@media (max-width: 480px){
+
+  .hero h1{
+    font-size:26px;
+  }
+
+  .promo h2{
+    font-size:24px;
+  }
+
+  .planos h2,
+  .beneficios h2,
+  .servicos h2{
+    font-size:22px;
+  }
+
+  .btn{
+    padding:12px 20px;
+    font-size:13px;
+  }
+
+}
+
+
+.aviso-matricula {
+  margin-top: 5vh;
+  font-size: 14px;
+  color: #ccc;
+  opacity: 0.8;
+}

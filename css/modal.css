@@ -1,0 +1,188 @@
+.modal{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.85);
+  display:none;
+  margin: 20px auto;
+
+  /* ✅ scroll principal */
+  overflow-y:auto;
+
+  /* ✅ suavidade */
+  scroll-behavior:smooth;
+  z-index:999;
+  padding:20px;
+}
+
+
+/*
+modal base (corrigido)
+*/
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 100px; /* espaço pro header */
+  padding-left: 10px;
+  padding-right: 10px;
+
+  background: rgba(0,0,0,0.6);
+  z-index: 2000;
+
+  overflow-y: auto;
+}
+
+
+/*
+conteudo do modal
+ */
+
+.modal-content{
+  background:#1a1a1a;
+  padding:25px;
+  border-radius:12px;
+
+  width:100%;
+  max-width:400px;
+
+  position:relative;
+
+  box-sizing:border-box;
+}
+
+.modal{
+  display: none; /*  essencial */
+}
+
+
+/* animacao */
+@keyframes fadeIn{
+  from{
+      opacity:0;
+      transform:translateY(20px);
+    }
+  to{
+      opacity:1;
+      transform:translateY(0);
+    }
+}
+
+
+/* botao x sempre visivel  */
+.close{
+
+    position:sticky;
+    top:0;
+    float:right;
+
+    cursor:pointer;
+    font-size:22px;
+    color:#aaa;
+
+    background:#1a1a1a;
+    padding:5px;
+
+    z-index:10;
+}
+
+.close:hover{
+    color:white;
+}
+
+
+/* inputs */
+.modal input{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+
+    background:#1e1e1e;
+    border:1px solid #333;
+    border-radius:6px;
+
+    color:white;
+    outline:none;
+}
+
+.modal input:focus{
+    border-color:#00ff5e;
+}
+
+
+/* ÁREA PIX */
+#pixArea{
+    margin-top:20px;
+    padding:15px;
+
+    background:#0f0f0f;
+    border-radius:8px;
+    border:1px solid #222;
+
+    text-align:center;
+}
+
+
+/* QR CODE */
+#qrcode{
+    display:flex;
+    justify-content:center;
+    margin-top:15px;
+}
+
+
+/* BOTÕES */
+.modal button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+
+    background:#00ff5e;
+    color:#00210f;
+
+    border:none;
+    border-radius:6px;
+
+    font-weight:600;
+    cursor:pointer;
+
+    transition:0.2s;
+}
+
+.modal button:hover{
+    background:#00cc4a;
+}
+
+
+@media screen and (max-width: 768px){
+    #qrcode{
+        display: none !important;
+    }
+}
+
+
+.close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.close:hover{
+    color: #00ff5e;
+}
