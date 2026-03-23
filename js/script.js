@@ -132,7 +132,7 @@ function cadastrarAluno(){
     document.getElementById("pixArea").style.display = "block"
 
    // QR CODE
-    let chavePix = "academiapowerfit@email.com"
+    let chavePix = "academiatestefit@email.com"
 
     let textoPix = `PIX
         Nome: Academia PowerFit
@@ -148,7 +148,7 @@ function cadastrarAluno(){
     })
 
     // whatsapp
-    let numeroAcademia = "5511977868534"
+    let numeroAcademia = "5511991421107"
 
     let mensagem = `Olá, acabei de me matricular na academia 💪
 
